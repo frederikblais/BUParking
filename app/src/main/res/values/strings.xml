@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BUPark</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_fragment_label">Parking</string>
+    <string name="second_fragment_label">Parking Availability</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="apartment_image">Parking image</string>
+    <string name="hello_first_fragment">Welcome Bishops University</string>
+    <string name="hello_second_fragment">Select your arrival parking date</string>
+    <string name="hello_blank_fragment">Hello blank fragment : %1$s Days </string>
+    <string name="hint">Enter the number of days</string>
+    <string name="enter_the_number_of_nights_of_your_stay">How many days will you park?</string>
+    <string name="select_your_arrival_date">Select your arrival parking date</string>
+    <string name="third_fragment_label">Parking Confirmation</string>
+    <string name="textview_third2">display field 2</string>
+</resources>
