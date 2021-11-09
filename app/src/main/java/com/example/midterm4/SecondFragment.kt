@@ -40,16 +40,11 @@ class SecondFragment : Fragment() {
         binding.buttonSecond.setOnClickListener {
             val reservationMonth = MONTHS[binding.datePicker.month]
             val arrivalDate = "$reservationMonth ${binding.datePicker.dayOfMonth} ${binding.datePicker.year}"
-            //val arrivalDate = "binding.datePicker.year.toString().trim() / binding.datePicker.month.toString().trim()"
-            //val arrivalDateFormatted = arrivalDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG))
 
             val bundle = bundleOf("nb_nights_arg" to binding.editTextTextPersonName.text.toString().trim(),
                                          "arrival_date" to arrivalDate)
 
-           // val bundle = bundleOf("nb_nights_arg" to binding.editTextTextPersonName.text.toString().trim())
-
             Navigation.findNavController(binding.root).navigate(R.id.action_SecondFragment_to_ThirdFragment, bundle )
-
         }
     }
 

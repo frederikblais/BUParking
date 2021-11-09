@@ -1,5 +1,7 @@
 package com.example.midterm4
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -33,7 +35,10 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
         binding.imageView.setOnClickListener{
-           // findNavController().navigate(R.id.deepLink2)
+            val url = "https://www.google.com/maps/place/Parking+lot,+Sherbrooke,+QC+J1M+2K3/@45.3644318,-71.8447379,17.98z/data=!4m5!3m4!1s0x4cb7ad55155d6bf3:0xf39d5d652d2dfc64!8m2!3d45.3645184!4d-71.8422114"
+            val i = Intent(Intent.ACTION_VIEW)
+            i.data = Uri.parse(url)
+            startActivity(i)
         }
     }
 

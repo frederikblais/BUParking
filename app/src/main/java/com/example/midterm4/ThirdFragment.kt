@@ -6,15 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import android.widget.TextView
-import androidx.navigation.fragment.navArgs
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.midterm4.databinding.FragmentThirdBinding
-import com.google.android.material.textfield.TextInputEditText
-import java.text.SimpleDateFormat
-import java.time.format.DateTimeFormatter
-import java.time.format.FormatStyle
 import java.util.*
 
 
@@ -47,11 +39,7 @@ class ThirdFragment : Fragment() {
 
 
             return view
-        }
-
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//
-//    }
+    }
 
     override fun onDestroyView() {
          super.onDestroyView()
